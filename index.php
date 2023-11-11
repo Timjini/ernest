@@ -9,37 +9,17 @@
 </head>
 
 <body class="">
-    <div class="navbar">
-        <div class="flex flex-row justify-center my-auto">
-            <h3 class="text-4xl">Agence Ernest</h3>
-        </div>
-        <div class="navigation-list">
-            <a href="/projects.html#projects">Projects</a>
-            <a href="#about">About</a>
-            <a href="#elements">Elements</a>
-        </div>
-        <div class="navigation-burger hidden">
-            <a id="toggleThemeBtn" type="button" class="theme-btn">
-                <span class="material-symbols-outlined" style="line-height: 4;">
-                    light_mode
-                </span>
-            </a>
-            <span class="material-symbols-outlined">
-                menu
-            </span>
-        </div>
-    </div>
 
-    <main class="">
-        <div class="hero">
-            <div class="hero_content flex flex-col justify-center">
-                <h2 class="text-8xl">Find your home</h2>
-                <p class="text-xl">Best place to look for a home </p>
-                <button class="btn my-5 w-48">Check our offers</button>
-            </div>
+    <?php include './includes/navigation.php' ?>
+    <?php include './includes/hero.php' ?>
 
-        </div>
-    </main>
+    <?php include './listing/feature.php' ?>
+
+    <?php include './includes/nos_services.php' ?>
+
+
+    <?php include './listing/destinations.php' ?>
+    <?php include './includes/footer.php' ?>
 
 </body>
 

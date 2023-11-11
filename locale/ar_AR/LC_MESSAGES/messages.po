@@ -1,0 +1,8 @@
+msgid "Bureau et Agence Ernest"
+msgstr "مكتب ووكالة إرنست"
+
+msgid "Leader de l’expertise Immobilière à Agadir"
+msgstr "الرائدة في الخبرة العقارية في أكادير"
+
+msgid "Cliquez ici"
+msgstr "انقر هنا"

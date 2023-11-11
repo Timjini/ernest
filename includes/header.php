@@ -2,6 +2,8 @@
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 <link rel="stylesheet" href="./styles/style.css" />
 <link rel="stylesheet" href="./styles/mobile.css" />
+<link rel="stylesheet" href="./styles/animation.css" />
+
 
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">

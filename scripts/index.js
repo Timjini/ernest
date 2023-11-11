@@ -1,3 +1,4 @@
+console.log("initiliazed")
 // THEME
 
 // document.addEventListener("DOMContentLoaded", function() {
@@ -28,7 +29,6 @@
 //         console.log(newTheme);
 //     });
 // });
-// ========================================================================================= END
 
 // SLIDER 
 
@@ -50,60 +50,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 // Get the burger and close elements
-const burger = document.getElementById('burger');
-const close = document.getElementById('close');
 
-// Get the navbar element
-const navbar = document.querySelector('.mobileNav');
 
-// Function to show the navbar
-function showNavbar(event) {
-    // Remove the class hidden from the navbar element
-    navbar.classList.remove('hidden');
+function showNav() {
+    const burger = document.getElementById('burger');
+    const navMenu = document.getElementById('navbar-sticky');
 
-    // Stop the click event from propagating to the document
-    event.stopPropagation();
+    burger.addEventListener('click', function() {
+        navMenu.classList.toggle('hidden'); // Toggle the 'hidden' class
+    });
 }
 
-// Function to hide the navbar
-function hideNavbar() {
-    // Add the class hidden to the navbar element
-    navbar.classList.add('hidden');
-}
-
-// Add click event listener to the burger element to show the navbar
-burger.addEventListener('click', showNavbar);
-
-// Add click event listener to the close button to hide the navbar
-close.addEventListener('click', function(event) {
-    hideNavbar();
-
-    // Stop the click event from propagating to the document
-    event.stopPropagation();
+document.addEventListener('DOMContentLoaded', function() {
+    showNav(); // Call the function once the DOM is ready
 });
 
-// Add click event listener to the document to hide the navbar when clicking outside
-document.addEventListener('click', hideNavbar);
 
 
 
-
-// Get the navbar element
-const navigation = document.getElementById('navbar');
-const twentyFivePrecentHeight = 0.25 * document.body.scrollHeight;
-
-// Add scroll event listener to the window
-window.addEventListener('scroll', function() {
-
-  if (window.scrollY > twentyFivePrecentHeight){    
-    navigation.classList.add('hidden');
-  } else {
-    navigation.classList.remove('hidden');
-  };
-
-  if (window.scrollY > 0) {
-    navigation.classList.add('navigation-scroll');
-  } else {
-    navigation.classList.remove('navigation-scroll');
-  }
-});

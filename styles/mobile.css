@@ -1,2 +1,18 @@
 @media screen and (max-width: 1000px){
+    .link{
+        color:#242424;
+    }
+
+    .destination_card{
+        max-width: 100%;
+    }
+
+    .hero{
+        height: 100vh;
+    }
+
+    .content_hero{
+        padding-top: 400px!important;
+    }
+
 }
