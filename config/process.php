@@ -1,8 +1,11 @@
 <?php
-$host = 'srv659.hstgr.io';
-$user = '';
-$password = '';
-$database = '';
+//  Check .env file
+$host =
+$user =
+$password =
+$database =
+
+
 
 try {
     // Create a PDO connection

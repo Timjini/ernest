@@ -1,10 +1,14 @@
 <?php
-$host = 'srv659.hstgr.io';
-$user = '';
-$password = '';
-$database = '';
+//  Check .env file
+$host =
+    $user =
+    $password =
+    $database =
 
-$conn = new mysqli($host, $user, $password, $database);
+
+
+
+    $conn = new mysqli($host, $user, $password, $database);
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
